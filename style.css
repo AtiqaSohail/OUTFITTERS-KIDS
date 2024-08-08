@@ -285,3 +285,40 @@ transition: 100ms;
     padding: 0 50px;
   }
 }
+/* Large screens (desktops) */
+@media only screen and (min-width: 1200px) {
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Medium screens (laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar ul {
+    display: block;
+  }
+  .navbar li {
+    margin-right: 10px;
+  }
+}
+
+/* Small screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar ul {
+    display: block;
+  }
+  .navbar li {
+    margin-right: 5px;
+  }
+}
+
+/* Extra small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  .navbar ul {
+    display: block;
+  }
+  .navbar li {
+    margin-right: 0;
+  }
+}
